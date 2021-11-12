@@ -1,9 +1,0 @@
-import './js/date/date.js';
-import './js/greeting/greeting.js';
-import './js/sliderImage/sliderImage.js';
-import './js/weather/weather.js';
-import './js/quote/quote.js';
-import './js/audioplayer/audioplayer.js';
-import './js/translateApp/translateApp.js';
-import './js/settings/settings.js';
-import './js/localStorage.js';
