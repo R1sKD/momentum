@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="player">
+      <div class="player-controls">
+        <button class="play-prev player-icon"></button>
+        <button class="play player-icon"></button>
+        <button class="play-next player-icon"></button>
+        <div class="timeline">
+          <div class="progress"></div>
+        </div>
+        <div class="audioTime">
+          <div class="current">0:00</div>
+          <div class="divider">/</div>
+          <div class="length"></div>
+        </div>
+        <div class="audioName">Music Song</div>
+        <div class="volume-button"></div>
+        <div class="volume-slider">
+          <div class="volume-percentage"></div>
+        </div>
+      </div>
+      <ul class="play-list"></ul>
+    </div>
+    <div class="weather">
+      <input type="text" class="city" value="Minsk" placeholder="[Enter city]">
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input type="text" class="name" placeholder="[Enter name]">
+    </div>
+  </main>
+
+  <footer class="footer">
+    <button class="change-quote"></button>
+    <div class="quote-container">
+      <div class="quote"></div>
+      <div class="author"></div>
+    </div>
+    <button class="settings-btn" type="button"></button>
+    <div class="settings">
+      <div class="settings__body">
+        <div class="settings__content">
+          <ul class="settings__list">
+            <li class="settings__item">
+              <span>Language</span>
+              <select class="settings__language" name="language">
+                <option value="en" selected>English</option>
+                <option value="ru">Russian</option>
+              </select>
+            </li>
+            <li class="settings__item settings__item--photoSource">
+              <span>Photo source:</span>
+              <select class="settings__photoSource">
+                <option value="github" selected>GitHub</option>
+                <option value="Unsplash API" >Unsplash API</option>
+                <option value="flickr">Flickr API</option>
+              </select>
+            </li>
+            <li class="settings__item settings__item--tags">
+              <input type="text" placeholder="write photo tags">
+            </li>
+            <li class="settings__item settings__item--hideelem">
+              Hide elements:
+            </li>
+            <li class="settings__item">
+              <label>
+                Time
+                <input class="settings__time" type="checkbox">
+              </label>
+            </li>
+            <li class="settings__item">
+              <label>
+                Date
+                <input class="settings__date" type="checkbox">
+              </label>
+            </li>
+            <li class="settings__item">
+              <label>
+                Greeting
+                <input class="settings__greeting" type="checkbox">
+              </label>
+            </li>
+            <li class="settings__item">
+              <label>
+                Quote
+                <input class="settings__quote" type="checkbox">
+              </label>
+            </li>
+            <li class="settings__item">
+              <label>
+                Weather
+                <input class="settings__weather" type="checkbox">
+              </label>
+            </li>
+            <li class="settings__item">
+              <label>
+                Audio
+                <input class="settings__audio" type="checkbox">
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="contacts">
+      <a class="contacts__link contacts__link--rsschool" href="https://rs.school/js/" target="_blank"></a>
+      <a class="contacts__link contacts__link--github" href="https://github.com/R1sKD" target="_blank"></a>
+      <span>2021</span>
+    </div>
+  </footer>
+
+  <script type="module" src="index.js"></script>
+</body>
+
+</html>
